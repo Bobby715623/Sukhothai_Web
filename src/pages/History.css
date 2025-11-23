@@ -1,0 +1,104 @@
+
+.history-hero {
+  background: #f3f4f6;
+  padding-top: 12px;
+}
+
+/* Overline + Title */
+.overline {
+  font-size: .85rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-top: 8px;
+}
+.hero-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin: 4px 0 6px;
+}
+.hero-sub {
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+/* Hero image + caption */
+.hero-figure {
+  margin: 0;
+}
+.hero-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.hero-caption {
+  font-size: .95rem;
+  color: #4b5563;
+  padding: 12px 0 20px;
+}
+
+/* Content sections */
+.content {
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+.lead-article h2 {
+  font-size: 1.5rem;
+  margin: 20px 0 8px;
+}
+.lead-article p {
+  color: #374151;
+  line-height: 1.75;
+}
+
+/* Timeline */
+.section-heading {
+  margin: 28px 0 14px;
+  font-size: 1.2rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.tl {
+  border-left: 2px solid #e5e7eb;
+  padding-left: 16px;
+}
+.tl-item { display: flex; gap: 16px; margin: 16px 0; }
+.tl-year {
+  min-width: 64px;
+  font-weight: 800;
+  color: #111827;
+}
+.tl-title { margin: 0 0 4px; }
+.tl-text { margin: 0; color: #4b5563; }
+
+/* Honours */
+.honours { margin-top: 24px; }
+.honours-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+.honour-card {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+.honour-trophy { font-size: 28px; }
+.honour-name { font-weight: 700; }
+.honour-years { color: #6b7280; }
+
+/* Footnote */
+.footnote {
+  margin-top: 24px;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
+}

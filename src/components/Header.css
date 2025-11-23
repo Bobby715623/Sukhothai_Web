@@ -1,0 +1,39 @@
+.navbar-custom {
+  background-color: #df3939; 
+  transition: background-color 0.3s;
+}
+
+.navbar-custom .nav-link {
+  color: #fff;
+  margin-right: 1rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #4a1313; 
+  transform: scale(1.1); 
+}
+
+.navbar-custom .dropdown-menu {
+  background-color: #ffffff;
+}
+
+.navbar-custom .dropdown-item:hover {
+  background-color: #ffffff;
+  color: #df3939 !important;
+}
+
+.navbar-custom .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.navbar-custom .dropdown .dropdown-menu {
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 40px;
+  }
+}

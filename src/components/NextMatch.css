@@ -1,0 +1,116 @@
+/* --- NextMatch (scoped) --- */
+.nextmatch {
+  width: 100%;
+  display: block;
+  padding-top: var(--header-h, 100px);
+  margin: 0 0 24px; 
+}
+
+.nextmatch .nm-inner {
+  width: 100%;
+  max-width: 1100px;   
+  margin: 0 auto;     
+  padding: 0 16px;     
+}
+
+.nextmatch h2 {
+  font-weight: 800;
+  color: #1f2937;
+  margin: 0 0 12px;
+}
+
+/* --- Card --- */
+.match-card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.match-card .p-6 {
+  padding: 24px;
+}
+
+.match-card p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #1f2937;
+}
+
+.match-card .match-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+/* --- Layout blocks --- */
+.countdown-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.divider {
+  border: 1px solid #e5e7eb;
+  margin: 0 24px;
+}
+
+/* --- Countdown --- */
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-number {
+  width: 48px;
+  height: 48px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown-label {
+  margin-top: 4px;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* --- Logos & Broadcasts --- */
+.team-logo {
+  width: 96px;
+}
+
+.team-logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.broadcasts {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* --- Responsive tweaks --- */
+@media (max-width: 768px) {
+  .countdown-container {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .team-logo { width: 80px; }
+  .team-logo img { width: 64px; height: 64px; }
+  .divider { margin: 0 16px; }
+}

@@ -1,0 +1,36 @@
+
+.team-page {
+  padding-top: var(--header-h, 80px);
+  text-align: center;
+  background: #ffffff;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 32px 0 16px;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+  justify-items: center;
+}
+
+.player-grid:last-of-type {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .team-title {
+    margin-top: 24px;
+    font-size: 1.2rem;
+  }
+  .player-grid {
+    gap: 16px;
+  }
+}

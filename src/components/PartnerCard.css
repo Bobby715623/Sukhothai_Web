@@ -1,0 +1,36 @@
+.partner-card {
+  display: grid;
+  place-items: center;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.06);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  text-decoration: none; 
+}
+
+.partner-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+  border-color: #d1d5db;
+}
+
+.partner-card img {
+  max-width: 100%;
+  max-height: 86px;
+  object-fit: contain;
+}
+
+.partner-md { min-height: 140px; }
+.partner-xl { min-height: 220px; }
+.partner-xl img { max-height: 140px; }
+
+.dark .partner-card {
+  background: #0f1216;
+  border-color: #2a2f36;
+  box-shadow: 0 2px 10px rgba(0,0,0,.35);
+}
+.dark .partner-card:hover {
+  border-color: #3a414b;
+}

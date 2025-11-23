@@ -1,0 +1,69 @@
+
+.shop-page {
+  padding-top: var(--header-h, 96px);
+  padding-bottom: 60px;
+  background: linear-gradient(180deg, #ffffff);
+  color: #e9ecf7;
+  min-height: 100vh;
+}
+
+
+.shop-heading {
+  font-weight: 800;
+  margin: 4px 0 20px;
+  color: #111; 
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.prod-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(5, 1fr);
+}
+@media (max-width: 1400px) {
+  .prod-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 1200px) {
+  .prod-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .prod-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 540px) {
+  .prod-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.shop-filter {
+  display: flex;
+  gap: 8px;
+  margin: 8px 0 18px;
+  justify-content: center;
+}
+.chip {
+  border: 1px solid #3c4080;
+  border-radius: 999px;
+  padding: 6px 14px;
+  background: #121533;
+  color: #e9ecf7;
+  transition: 0.2s;
+}
+.chip:hover {
+  background: #f0c94d;
+  color: #121533;
+}
+.chip-active {
+  background: #f0c94d;
+  color: #121533;
+  border-color: #f0c94d;
+}

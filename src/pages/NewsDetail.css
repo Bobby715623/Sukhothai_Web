@@ -1,0 +1,58 @@
+
+
+.nd-wrap { background:#ffffff; }
+
+.nd-meta{
+  display:flex; justify-content:space-between; align-items:center;
+  gap:12px; margin-top:6px;
+}
+.nd-back{
+  color:#1f2937; text-decoration:none; font-weight:600;
+}
+.nd-back:hover{ text-decoration:underline; }
+.nd-date{ color:#6b7280; font-size:.95rem; }
+
+.nd-title{
+  font-weight:800;
+  font-size: clamp(2rem, 3.6vw, 3.25rem);
+  line-height:1.1;
+  margin:8px 0 12px;
+  border-top:4px solid #c8102e;  
+  padding-top:10px;
+}
+
+.nd-hero{ margin:0; }
+.nd-hero img{ width:100%; height:auto; display:block; }
+
+.nd-body{
+  max-width:860px;  
+  padding: 18px 0 48px;
+}
+.nd-dek{
+  font-size:1.15rem; line-height:1.7; color:#0f172a;
+  margin: 12px 0 10px;
+}
+.nd-body p{
+  font-size:1.05rem; line-height:1.85; color:#1f2937;
+  margin:10px 0;
+}
+.nd-body a{ color:#b91c1c; text-decoration:underline; }
+.nd-body ul{ margin:10px 0 14px 1.1rem; }
+.nd-body li{ margin:4px 0; }
+
+/* คำพูดเน้น */
+blockquote{
+  margin:18px 0;
+  padding:14px 18px;
+  border-left:4px solid #c8102e;
+  background:#fafafa;
+  color:#111827;
+  font-style: italic;
+}
+
+@media (max-width:640px){
+  .nd-body{ padding-bottom:36px; }
+}
+.nd-detail, .nd-excerpt{
+  margin-left: 5%;
+}
